@@ -15,7 +15,7 @@ To install the application, follow these steps:
 
 1. Clone the repository:
     ```bash
-    [git clone https://github.com/yourusername/WBAN_IDS_IPS.git](https://github.com/yokai-crow/pantheon.git)
+    git clone https://github.com/yokai-crow/pantheon.git
     ```
 2. Navigate to the project directory:
     ```bash
