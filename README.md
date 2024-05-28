@@ -1,4 +1,4 @@
-# WBAN IDS IPS Mobile Application
+# WBAN IDS IPS Mobile Application (Pantheon)
 
 Welcome to the WBAN (Wireless Body Area Network) IDS (Intrusion Detection System) and IPS (Intrusion Prevention System) mobile application repository. This application is designed to enhance the security of WBAN by providing real-time network monitoring, detection and mitigation of DoS attacks, malware detection based on signatures, and an emergency call feature.
 
@@ -71,3 +71,8 @@ If you have any questions or need further assistance, feel free to contact us at
 ---
 
 Thank you for using the WBAN IDS IPS mobile application! We hope it enhances the security of your wireless body area network.
+
+## NOTE
+
+This project is the Final Year Project of APU/APIIT for BSc (Hons) in Information and Technology, done by Arun Saru (NPI000088).
+
