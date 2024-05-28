@@ -19,7 +19,7 @@ To install the application, follow these steps:
     ```
 2. Navigate to the project directory:
     ```bash
-    cd WBAN_IDS_IPS
+    cd Pantheon
     ```
 3. Open the project in your preferred mobile development environment (e.g., Android Studio, Xcode).
 4. Build and run the application on your mobile device or emulator.
