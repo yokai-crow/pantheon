@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Pantheon</string>
+    <string name="network_status_template">Network Status: %s</string>
+    <string name="network_traffic_template">Network Traffic: %s</string>
+    <string name="network_type_label">Network Type: %s</string>
+    <string name="ipv4_address_label">IPv4 Address: %s</string>
+    <string name="ipv6_address_label">IPv6 Address: %s</string>
+
+    <!-- Network Status -->
+    <string name="network_connected">Connected</string>
+    <string name="network_disconnected">Disconnected</string>
+    <string name="network_status_format">%s (%s)</string>
+
+    <!-- Network Types -->
+    <string name="network_wifi">Wi-Fi</string>
+    <string name="network_2g">2G</string>
+    <string name="network_3g">3G</string>
+    <string name="network_4g">4G</string>
+    <string name="network_unknown">Unknown</string>
+
+    <!--for ICMP detection-->
+    <string name="enable_monitoring">Enable Monitoring</string>
+    <string name="monitored_data">Monitoring ICMP Flood</string>
+    <string name="intrusion_alert">Intrusion Alert!</string>
+    <string name="total_icmp_packets">Total Pings: %d</string>
+
+    <string name="no_data_available">No data available</string>
+    <string name="network_traffic_healthy">Network Traffic: Healthy</string>
+    <string name="packet_flood_detected">Packet Flood Detected</string>
+    <string name="packet_flood_detector">Packet Flood Detector</string>
+
+    <color name="orange_dark">#FFA500</color> <!-- Orange color -->
+    <color name="green_dark">#008000</color> <!-- Green color -->
+    <color name="red_dark">#FF0000</color> <!-- Red color -->
+    <color name="pie_blue">#00b7c7</color>
+    <color name="pie_green">#8be04e</color>
+
+    <string name="enable_false_positive_reduction">Enable False +ve Reduction</string>
+    <string name="select_folder">Select File</string>
+    <string name="scan_for_malware">Scan for Malware</string>
+    <string name="mitigation_setting">Mitigation Setting</string>
+    <string name="enable_isolation">Enable Isolation</string>
+    <string name="enable_resource_backoff">Enable Resource Backoff</string>
+
+    <string name="isolation_switch_description">Enable isolation switch</string>
+    <string name="resource_backoff_switch_description">Enable resource backoff switch</string>
+    <string name="pantheon">PANTHEON</string>
+    <string name="malware_detection">Malware Detection</string>
+    <string name="wlan_discovery">WBAN Discovery</string>
+    <string name="emergency_call">Emergency Call</string>
+    <string name="save">Save</string>
+    <string name="enter_emergency_contact_number">Enter Emergency Contact Number</string>
+    <string name="make_emergency_call">Make Emergency Call</string>
+    <string name="discover_wban_devices">Discover WBAN Devices</string>
+    <string name="packet_flood_detection">Packet Flood Detection</string>
+    <string name="developed_with_by_arun_saru">Developed with ❤ by Arun Saru</string>
+
+
+</resources>

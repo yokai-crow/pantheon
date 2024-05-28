@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <!-- Header: PANTHEON -->
+
+    <!-- TextViews for Network Status, IPv4, IPv6, Network Type, and Network Traffic -->
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/press_start_2p"
+        android:gravity="center_horizontal"
+        android:text="@string/pantheon"
+        android:textColor="@color/text_primary_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/networkStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/network_status_template"
+        android:textColor="@color/text_primary_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ipv6TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/ipv6_address_label"
+        android:textColor="@color/text_secondary_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ipv4TextView" />
+
+    <TextView
+        android:id="@+id/ipv4TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ipv4_address_label"
+        android:textColor="@color/text_secondary_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/networkTypeTextView" />
+
+    <TextView
+        android:id="@+id/networkTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/network_type_label"
+        android:textColor="@color/text_secondary_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/networkTrafficTextView" />
+
+    <!-- Discover Devices Button -->
+    <TextView
+        android:id="@+id/networkTrafficTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/network_traffic_template"
+        android:textColor="@color/text_primary_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/networkStatusTextView" />
+
+    <!-- Intrusion Detection Button -->
+
+    <Button
+        android:id="@+id/discoverDevicesButton"
+        android:layout_width="128dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/square_button_round_corners"
+        android:onClick="onDiscoverDevicesClick"
+        android:text="@string/discover_wban_devices"
+        app:layout_constraintEnd_toStartOf="@+id/intrusionDetectionButton"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ipv6TextView" />
+
+    <Button
+        android:id="@+id/intrusionDetectionButton"
+        android:layout_width="125dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/square_button_round_corners"
+        android:onClick="onIntrusionDetectionClick"
+        android:text="@string/emergency_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ipv6TextView" />
+
+    <Button
+        android:id="@+id/packetFloodDetectionButton"
+        android:layout_width="125dp"
+        android:layout_height="116dp"
+        android:background="@drawable/square_button_round_corners"
+        android:onClick="onPacketFloodDetectionClick"
+        android:text="@string/packet_flood_detection"
+        app:layout_constraintBottom_toTopOf="@+id/mitigationSettingButton"
+        app:layout_constraintEnd_toStartOf="@+id/malwareDetectionButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discoverDevicesButton" />
+
+
+    <!-- Developed By Footer -->
+
+    <Button
+        android:id="@+id/malwareDetectionButton"
+        android:layout_width="125dp"
+        android:layout_height="116dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/square_button_round_corners"
+        android:onClick="onMalwareDetectionClick"
+        android:text="@string/malware_detection"
+        app:layout_constraintBottom_toTopOf="@+id/mitigationSettingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intrusionDetectionButton" />
+
+    <Button
+        android:id="@+id/mitigationSettingButton"
+        android:layout_width="126dp"
+        android:layout_height="118dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/square_button_round_corners"
+        android:onClick="onMitigationSettingClick"
+        android:text="@string/mitigation_setting"
+        app:layout_constraintBottom_toTopOf="@+id/footerTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/footerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/developed_with_by_arun_saru"
+        android:textColor="@color/text_secondary_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
